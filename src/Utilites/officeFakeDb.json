@@ -1,0 +1,96 @@
+[
+    {
+        "id": 1,
+        "imgList": [
+            {
+                "id": 1,
+                "tittle": "Industrial Charm",
+                "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRopgX3JVzBG5UazCi3U2s1hQaKObvMN1umFKDh9KNpU3avn0v3ORaw9FGUdKCBeBWTNOc&usqp=CAU"
+            },
+            {
+                "id": 2,
+                "tittle": "Office design",
+                "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRAY25f_vA2iwMn40_YLqc6jqim0utJESUbV9piZyUlmY-KqYgL9lhliTMtn3S8tSQHqps&usqp=CAU"
+            },
+            {
+                "id": 3,
+                "tittle": "Interior Architecture",
+                "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbpylssRz0t7yGGGd0UoCeChJLsG5OAEma6w&usqp=CAU"
+            },
+            {
+                "id": 4,
+                "tittle": "Minimalist design",
+                "image": "https://www.dgicommunications.com/wp-content/uploads/2022/02/modernofficedesign.jpg"
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "imgList": [
+            {
+                "id": 1,
+                "tittle": "Scandinavian design",
+             
+                "image": "https://img.pikbest.com/ai/illus_our/20230529/0890115fc5fb4334f025d4e4bfe01aab.jpg!w700wp"
+            }
+        ]
+    },
+    {
+        "id": 3,
+        "imgList": [
+            {
+                "id": 1,
+                "tittle": "Biophilic design",
+               
+                "image": "https://www.shutterstock.com/shutterstock/photos/2293350759/display_1500/stock-photo--d-illustration-of-a-newly-built-luxury-home-2293350759.jpg"
+            },
+            {
+                "id": 2,
+                "tittle": "Biophilic design",
+              
+                "image": "https://media.designcafe.com/wp-content/uploads/2021/05/19174427/minimalist-home-design-ideas.jpg"
+            },
+            {
+                "id": 3,
+                "tittle": "Transitional",
+               
+                "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkgXY2kIyxs6GpSo6g1TxOhw8fb9xyenZOnQ&usqp=CAU"
+            },
+            {
+                "id": 4,
+                "tittle": "Collaborative workspaces",
+               
+                "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBSh4dut_OX_YXC6CnUqFfwMViM2hSHOcG3Q&usqp=CAU"
+            }
+        ]
+    },
+    {
+        "id": 4,
+        "imgList": [
+            {
+                "id": 1,
+                "tittle": "Eclectic style",
+               
+                "image": "https://cdn.autonomous.ai/static/upload/images/new_post/small-eclectic-home-offices-with-color-3474-1638449593366.jpg"
+            },
+            {
+                "id": 2,
+                "tittle": "Ergonomic Solutions",
+                
+                "image": "https://www.danielsinsuranceinc.com/wp-content/uploads/2020/12/Ergonomics.jpg"
+            },
+            {
+                "id": 3,
+                "tittle": "Flexible layouts",
+               
+                "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6m3mTodx24SYL5-ds2Zw97Sq3SdY0b8L2KD8mvIeL4znCHEXFQyl1HUpuGW8zlusF1e8&usqp=CAU"
+            },
+            {
+                "id": 4,
+                "tittle": "Hollywood glam interior design",
+                
+                "image": "https://i.pinimg.com/736x/4c/2c/3d/4c2c3d8115d63620e345e3f7dda83963.jpg"
+            }
+        ]
+    }
+]

@@ -1,0 +1,96 @@
+[
+    {
+        "id": 1,
+        "imgList": [
+            {
+                "id": 1,
+                "tittle": "Contemporary",
+                "image": "https://img.freepik.com/free-photo/luxury-pool-villa-spectacular-contemporary-design-digital-art-real-estate-home-house-property-ge_1258-150749.jpg"
+            },
+            {
+                "id": 2,
+                "tittle": "Scandinavian",
+                "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTo3Ygx5EIf2HTgh1wNKqYjvRtQGPUlxzL4gQ&usqp=CAU"
+            },
+            {
+                "id": 3,
+                "tittle": "Bohemian",
+                "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbpylssRz0t7yGGGd0UoCeChJLsG5OAEma6w&usqp=CAU"
+            },
+            {
+                "id": 4,
+                "tittle": "Industrial",
+                "image": "https://s43635.pcdn.co/wp-content/uploads/2019/05/industrial-design1.jpg.optimal.jpg"
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "imgList": [
+            {
+                "id": 1,
+                "tittle": "Industrial Mid century modern interior design",
+             
+                "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRecSJB-SBnMWar2TWgGVtvJyiBuB8QvY_6fw&usqp=CAU"
+            }
+        ]
+    },
+    {
+        "id": 3,
+        "imgList": [
+            {
+                "id": 1,
+                "tittle": "Traditional",
+               
+                "image": "https://www.shutterstock.com/shutterstock/photos/2293350759/display_1500/stock-photo--d-illustration-of-a-newly-built-luxury-home-2293350759.jpg"
+            },
+            {
+                "id": 2,
+                "tittle": "Minimalism",
+              
+                "image": "https://media.designcafe.com/wp-content/uploads/2021/05/19174427/minimalist-home-design-ideas.jpg"
+            },
+            {
+                "id": 3,
+                "tittle": "Modern farmhouse",
+               
+                "image": "https://cdn.musserbuilder.com/wp-content/uploads/2019/02/Modern-Farmhouse-Glendale-Estates.jpg"
+            },
+            {
+                "id": 4,
+                "tittle": "Modern",
+               
+                "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8mLeeB3YADMnqI5TMf6NLzUOtBOl0rybYqg&usqp=CAU"
+            }
+        ]
+    },
+    {
+        "id": 4,
+        "imgList": [
+            {
+                "id": 1,
+                "tittle": "Shabby Chic",
+               
+                "image": "https://i.pinimg.com/564x/45/82/92/4582924db95a00f44804f4fba6431527.jpg"
+            },
+            {
+                "id": 2,
+                "tittle": "Minimalist interior design",
+                
+                "image": "https://goodhomes.wwmindia.com/content/2022/may/minimalist-interior-design-sheer-lavish-yet-minimal-bedroom.jpg"
+            },
+            {
+                "id": 3,
+                "tittle": "Hollywood Regency",
+               
+                "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWCnnvPEVz_OJLNxA1YCZFvq-nsIJUjw0STA&usqp=CAU"
+            },
+            {
+                "id": 4,
+                "tittle": "Southwestern",
+                
+                "image": "https://i.pinimg.com/originals/48/f2/5c/48f25cf51f635e667b146da0e123346a.jpg"
+            }
+        ]
+    }
+]
