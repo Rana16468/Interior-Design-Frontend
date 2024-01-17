@@ -26,13 +26,11 @@ const UserRegister = () => {
     console.log(data);
     const image = data.photo[0];
 
-    var imageSizeInKB = image.size / 1024;
-    if (imageSizeInKB > 600) {
-      toast.error("Image size exceeds the allowed limit (max 600KB).");
-    }
+    //https://api.imgbb.com/1/upload?key=${imageHostKey}
+    //https://api.imgbb.com/1/upload?expiration=600&key=${process.env.REACT_APP_IMAGE_KEY}
     const formData = new FormData();
     formData.append("image", image);
-    const url = `https://api.imgbb.com/1/upload?expiration=600&key=${process.env.REACT_APP_IMAGE_KEY}`;
+    const url = `https://api.imgbb.com/1/upload?key=${process.env.REACT_APP_IMAGE_KEY}`;
     setError("");
     fetch(url, {
       method: "POST",

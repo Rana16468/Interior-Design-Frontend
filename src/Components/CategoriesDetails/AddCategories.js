@@ -9,13 +9,9 @@ const AddCategories = () => {
 
   const onSubmit = (data) => {
     const image = data.photo[0];
-    var imageSizeInKB = image.size / 1024;
-    if (imageSizeInKB > 600) {
-      toast.error("Image size exceeds the allowed limit (max 600KB).");
-    }
     const formData = new FormData();
     formData.append("image", image);
-    const url = `https://api.imgbb.com/1/upload?expiration=600&key=${process.env.REACT_APP_IMAGE_KEY}`;
+    const url = `https://api.imgbb.com/1/upload?key=${process.env.REACT_APP_IMAGE_KEY}`;
     const email = user ? user?.email : "";
 
     fetch(url, {
@@ -35,7 +31,7 @@ const AddCategories = () => {
 
     reset();
   };
-
+  //dc9a2365d78945adff1773bd075bbebd
   const addedCategories = (data) => {
     fetch(
       "https://interior-design-seven-psi.vercel.app/added_interior_categories",
