@@ -173,6 +173,12 @@ const Navbar = () => {
               <li>
                 <button className="btn btn-outline btn-sm m-1">Home</button>
               </li>
+              <li>
+                <button className="btn btn-outline btn-sm m-1">
+                  Industry Analysis
+                </button>
+              </li>
+
               {sellerAccountRouter}
               {buyerAccountRouter}
               {logoutHandelar}
@@ -194,6 +200,14 @@ const Navbar = () => {
             <li>
               <Link to="/" className="btn btn-outline btn-sm m-1 ">
                 Home
+              </Link>
+            </li>
+
+            <li>
+              <Link
+                to="/industry_Analysis"
+                className="btn btn-outline btn-sm m-1 ">
+                Industry Analysis
               </Link>
             </li>
             {sellerAccountRouter}

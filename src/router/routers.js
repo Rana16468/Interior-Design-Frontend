@@ -52,6 +52,7 @@ const routes = createBrowserRouter([
       { path: "/about", element: <About /> },
       { path: "/Service", element: <Service /> },
       { path: "/Contruct", element: <Contruct /> },
+
       {
         path: "/imageGenerated",
         element: (

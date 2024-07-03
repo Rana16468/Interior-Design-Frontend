@@ -2,7 +2,7 @@ import { useQuery } from "@tanstack/react-query";
 import React from "react";
 import AllReportDisplay from "./AllReportDisplay";
 import toast from "react-hot-toast";
-
+import Swal from "sweetalert2";
 const AllReportList = () => {
   const {
     data: all_reports_list = [],
@@ -21,26 +21,36 @@ const AllReportList = () => {
   });
 
   const handelDelete = (id) => {
-    const confirm = window.confirm("Are You Shure ,You want to Delete This");
-    if (confirm) {
-      fetch(
-        `https://interior-design-seven-psi.vercel.app/delete_report/${id}`,
-        {
-          method: "DELETE",
-          headers: {
-            "Content-Type": "application/json",
-          },
-        }
-      )
-        .then((res) => res.json())
-        .then((data) => {
-          toast.success(data?.message);
-          refetch();
-        })
-        .catch((error) => {
-          console.log(error?.message);
-        });
-    }
+    Swal.fire({
+      title: "Do you want to save the changes?",
+      showDenyButton: true,
+      showCancelButton: true,
+      confirmButtonText: "Delete",
+      denyButtonText: `Don't Delete`,
+    }).then((result) => {
+      /* Read more about isConfirmed, isDenied below */
+      if (result.isConfirmed) {
+        fetch(
+          `https://interior-design-seven-psi.vercel.app/delete_report/${id}`,
+          {
+            method: "DELETE",
+            headers: {
+              "Content-Type": "application/json",
+            },
+          }
+        )
+          .then((res) => res.json())
+          .then((data) => {
+            toast.success(data?.message);
+            refetch();
+          })
+          .catch((error) => {
+            console.log(error?.message);
+          });
+      } else if (result.isDenied) {
+        Swal.fire("Changes are not saved", "", "info");
+      }
+    });
   };
 
   return (

@@ -3,8 +3,16 @@ import { useNavigate } from "react-router-dom";
 import HomeCatagoriesID from "./HomeCatagoriesID";
 import OfficeCategories from "./OfficeCategories";
 import IDesignCategories from "./IDesignCategories";
+
 const Home = () => {
   const navigate = useNavigate();
+
+  const [isIntroAnimationDone, setIsIntroAnimationDone] = useState(false);
+
+  useEffect(() => {
+    const timer = setTimeout(() => setIsIntroAnimationDone(true), 3000); // Adjust animation duration as needed
+    return () => clearTimeout(timer);
+  }, []);
 
   const advertisements = [
     {
