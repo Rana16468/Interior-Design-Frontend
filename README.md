@@ -1,4 +1,17 @@
 
+## Project Overview : 
+
+# Technologies Used:
+
+# React.js: Framework for server-rendered React applications.
+# Context Api: State management library for managing and centralizing application state.
+# ImageBB: Service for image uploading and hosting.
+# Tailwind CSS: Utility-first CSS framework for styling.
+# DaisyUI: UI component library for Tailwind CS
+# AI : 
+## Project Description:
+# Interior Design  aims to create a platform where users can view, upload,And Buy the Interiror design , using Buying Account ,SSL commaze which is the our payment Getway, Seller Account Holder Can be post Interiror Design , Also Create Interiror Design Using AI, This Features is Included This System 
+
 
 ## Getting Started
 
