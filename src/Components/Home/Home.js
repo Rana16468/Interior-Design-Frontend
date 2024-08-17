@@ -43,6 +43,7 @@ const Home = () => {
       clearInterval(interval);
     };
   }, [advertisements.length]);
+  console.log(isIntroAnimationDone);
   return (
     <>
       <div className="bg-gray-100 p-4">
@@ -84,7 +85,7 @@ const Home = () => {
         <a href="...">
           <img
             className="w-full h-full object-cover"
-            src="https://t.ly/wJBjk"
+            src="https://i.pinimg.com/736x/d5/02/14/d502147dfce35313e3e3e7c9df468e71.jpg"
             alt=""
           />
         </a>

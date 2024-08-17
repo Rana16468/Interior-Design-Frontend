@@ -5,7 +5,9 @@ import { useForm } from "react-hook-form";
 import toast from "react-hot-toast";
 const ImageGenerated = () => {
   const { handleSubmit, register, reset } = useForm();
-  const [generatedImage, setGeneratedImage] = useState("");
+  const [generatedImage, setGeneratedImage] = useState(
+    "https://i.ytimg.com/vi/kJiSdxRuU1I/maxresdefault.jpg"
+  );
   const downloadImage = async (imageSrc) => {
     const image = await fetch(imageSrc);
     const imageBlog = await image.blob();
