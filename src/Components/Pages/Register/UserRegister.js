@@ -40,11 +40,10 @@ const UserRegister = () => {
       .then((imgData) => {
         if (imgData.success) {
           data.photo = imgData?.data?.url;
-          console.log(data.photo);
         }
       })
       .catch((error) => {
-        console.log(error?.message);
+        toast.error(error?.message);
       });
     if (data.password.length < 6) {
       setError("Password should be 6 characters or more.");
@@ -60,16 +59,18 @@ const UserRegister = () => {
       .then((result) => {
         const user = result.user;
 
-        updateProfileInfo(data?.full_name, data?.photo, data?.userCategory);
+        if (user) {
+          updateProfileInfo(data?.full_name, data?.photo, data?.userCategory);
 
-        userEmailVarification();
+          userEmailVarification();
 
-        storeUserInformation(data);
-        setRegister(true);
-        console.log(user);
-        reset();
-        navigate("/");
-        toast.success("Checked Your Email Index And Varified is It You");
+          storeUserInformation(data);
+          setRegister(true);
+
+          reset();
+          navigate("/");
+          toast.success("Checked Your Email Index And Varified is It You");
+        }
       })
       .catch((error) => {
         setError(error.message);
@@ -83,7 +84,7 @@ const UserRegister = () => {
 
       updateUserProfile(photoURL)
         .then(() => {
-          console.log("successfuly-profile-update");
+          toast.success("successfuly-profile-update");
         })
         .catch((error) => {
           setError(error.message);
@@ -124,10 +125,10 @@ const UserRegister = () => {
         <div className="container max-w-screen-lg mx-auto">
           <div>
             <h2 className="font-semibold text-xl text-gray-600">
-              Responsive Form
+              Interior Design
             </h2>
             <p className="text-gray-500 mb-6">
-              Form is mobile responsive. Give it a try.
+              Interior Design (DYD) is mobile responsive. Give it a try.
             </p>
 
             <div className="bg-white rounded shadow-lg p-4 px-4 md:p-8 mb-6">
@@ -135,6 +136,7 @@ const UserRegister = () => {
                 <div className="text-gray-600">
                   <p className="font-medium text-lg">Personal Details</p>
                   <p>Please fill out all the fields.</p>
+                  <p>Interior Design (DYD) </p>
                 </div>
 
                 <div className="lg:col-span-2">

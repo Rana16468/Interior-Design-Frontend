@@ -191,7 +191,7 @@ const Navbar = () => {
             DYD
           </a>
 
-          <p className="font-bold  font-serif text-xl">
+          <p className="font-bold  font-serif text-sm">
             <Link>{displayData ? displayData[0] : ""}</Link>
           </p>
         </div>
@@ -218,16 +218,16 @@ const Navbar = () => {
         </div>
 
         <label
-          htmlFor="setting-dashboard"
+          htmlFor="my-drawer-2"
           tabindex={3}
           className="text-purple-700 hover:text-white border border-purple-700 hover:bg-purple-800 focus:ring-4 focus:outline-none focus:ring-purple-300 font-medium rounded-lg text-sm px-3 py-1.5 text-center mr-2 mb-2 dark:border-purple-400 dark:text-purple-400 dark:hover:text-white dark:hover:bg-purple-500 dark:focus:ring-purple-900 lg:hidden mt-2">
           <GrUserAdmin className="text-xs text-white" />
         </label>
 
         <div className="navbar-end ">
-          <p className="font-bold  font-serif text-xl mr-2">
+          <p className="font-bold  font-serif text-sm mr-2">
             {displayData?.length === 1 ? (
-              <Link>Buyer Account</Link>
+              <Link>Buyer Acc</Link>
             ) : (
               <>{displayData ? displayData[1] : ""}</>
             )}
@@ -254,7 +254,14 @@ const Navbar = () => {
           <div className="dropdown dropdown-end">
             <label tabIndex={0} className="btn btn-ghost btn-circle avatar">
               <div className="w-20 rounded-full ring ring-primary ring-offset-base-100 ring-offset-2">
-                <img alt="" src={user ? user?.photoURL : ""} />
+                <img
+                  alt="User Avatar"
+                  src={
+                    user
+                      ? user?.photoURL
+                      : "https://static.vecteezy.com/system/resources/thumbnails/020/911/737/small_2x/user-profile-icon-profile-avatar-user-icon-male-icon-face-icon-profile-icon-free-png.png"
+                  }
+                />
               </div>
             </label>
             <ul
@@ -269,29 +276,23 @@ const Navbar = () => {
                 </Link>
               </li>
               <li>
-                <Link to="/user_profile" className="btn btn-outline btn-sm m-1">
-                  Profile
-                </Link>
-              </li>
-              <li>
                 <Link to="/about" className="btn btn-outline btn-sm m-1">
                   About
                 </Link>
               </li>
               <li>
-                <Link to="/Service" className="btn btn-outline btn-sm m-1">
+                <Link to="/service" className="btn btn-outline btn-sm m-1">
                   Service
                 </Link>
               </li>
               <li>
-                <Link to="/Contruct" className="btn btn-outline btn-sm m-1 ">
-                  Contract
+                <Link to="/contact" className="btn btn-outline btn-sm m-1">
+                  Contact
                 </Link>
               </li>
-
-              {logoutHandelar}
+              <li>{logoutHandelar}</li>
             </ul>
-            <label
+            {/* <label
               htmlFor="my-drawer-2"
               tabIndex={0}
               className="btn btn-ghost lg:hidden">
@@ -308,7 +309,7 @@ const Navbar = () => {
                   d="M4 6h16M4 12h8m-8 6h16"
                 />
               </svg>
-            </label>
+            </label> */}
           </div>
         </div>
       </div>
