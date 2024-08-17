@@ -36,6 +36,7 @@ import Service from "../Components/Service/Service";
 import Contruct from "../Components/Contruct/Contruct";
 import ImageGenerated from "../Components/ImageGenrated/ImageGenerated";
 import ContractList from "../Components/Contruct/ContractList";
+import IndustryAnalysis from "../Components/IndustryAnalysis/IndustryAnalysis";
 
 const routes = createBrowserRouter([
   {
@@ -52,6 +53,7 @@ const routes = createBrowserRouter([
       { path: "/about", element: <About /> },
       { path: "/Service", element: <Service /> },
       { path: "/Contruct", element: <Contruct /> },
+      { path: "/industry_Analysis", element: <IndustryAnalysis /> },
 
       {
         path: "/imageGenerated",

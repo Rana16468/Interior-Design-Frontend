@@ -4,6 +4,7 @@ import { AuthContext } from "../../AuthProvider/AuthProvider";
 import { useForm } from "react-hook-form";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import toast from "react-hot-toast";
+import Modal from "../../../PasswordModal/Modal";
 const Login = () => {
   const { signIn, googleLogin } = useContext(AuthContext);
   const [error, setError] = useState(null);
@@ -101,6 +102,7 @@ const Login = () => {
                   id="email"
                   name="email"
                   type="email"
+                  defaultValue={`mdashifuzzamanakib@gmail.com`}
                   {...register("email")}
                   required
                   placeholder="Your email address"
@@ -116,6 +118,7 @@ const Login = () => {
                   className="text-sm bg-gray-200 appearance-none rounded w-full py-2 px-3 text-gray-700 mb-1 leading-tight focus:outline-none focus:shadow-outline h-10"
                   id="password"
                   type="password"
+                  defaultValue={"215019"}
                   {...register("password")}
                   required
                   placeholder="Your password"
@@ -136,6 +139,14 @@ const Login = () => {
             </form>
 
             <div>
+              <button
+                className="btn w-full btn-outline btn-primary btn-sm mt-2"
+                onClick={() =>
+                  document.getElementById("my_modal_3").showModal()
+                }>
+                Buyer & Seller Email , Password
+              </button>
+              <Modal />
               <button
                 onClick={handelGoogleSinIn}
                 type="submit"
